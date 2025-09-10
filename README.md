@@ -30,7 +30,7 @@ Configure the module in your `config.js` file.
 To configure this module, you will need a stop number, and, optionally, the line number which you want to get information about. The stop number can be found by looking for it at EMT Madrid's website or Google Maps.  
 
 
-[EMT Madrid's website]([https://www.emtmadrid.es/EMTBUS/MiBus])
+[EMT Madrid's website](https://www.emtmadrid.es/EMTBUS/MiBus)
 
 
 ## Using the module
