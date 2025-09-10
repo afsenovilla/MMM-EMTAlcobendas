@@ -1,5 +1,5 @@
-# Module: MMM-EMTValencia
-This [MagicMirror](https://github.com/MichMich/MagicMirror) module displays information about estimations for bus stops in the city of Valencia (Spain). The service is provided by EMT Valencia. Supports **English** (*en*), **Spanish** (*es*) and **Catalan** (*ca*).
+# Module: MMM-EMTAlcobendas
+This [MagicMirror](https://github.com/MichMich/MagicMirror) module displays information about estimations for bus stops in the city of Alcobendas (Madrid-Spain). The service is provided by EMT Madrid. Supports **English** (*en*), **Spanish** (*es*) and **Catalan** (*ca*).
 
 <center><img src="https://theraulxp.es/legacy/emt_magicmirror.png" alt="Module screen" width="400"></center>
 
@@ -16,10 +16,10 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```
-git clone https://github.com/TheRaulXP/MMM-EMTValencia
+git clone [https://github.com/afsenovilla/MMM-EMTAlcobendas]
 ```
 
-Navigate to the new `MMM-EMTValencia` folder and install the node dependencies.
+Navigate to the new `MMM-EMTAlcobendas` folder and install the node dependencies.
 ```
 npm install
 ```
@@ -27,10 +27,10 @@ npm install
 Configure the module in your `config.js` file.
 
 ## Find your stop number
-To configure this module, you will need a stop number, and, optionally, the line number which you want to get information about. The stop number can be found by looking for it at EMT Valencia's website.  
+To configure this module, you will need a stop number, and, optionally, the line number which you want to get information about. The stop number can be found by looking for it at EMT Madrid's website or Google Maps.  
 
 
-[EMT Valencia's website](http://www.emtvalencia.es/)
+[EMT Madrid's website]([https://www.emtmadrid.es/EMTBUS/MiBus])
 
 
 ## Using the module
@@ -40,7 +40,7 @@ To use this module, add it to the modules array in the `config/config.js` file.
 ```javascript
 modules: [
   {
-    module: 'MMM-EMTValencia',
+    module: 'MMM-EMTAlcobendas',
     position: 'top_left',
     header: 'My bus stop',
     config: {
