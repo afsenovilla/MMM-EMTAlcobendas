@@ -16,7 +16,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```
-git clone [https://github.com/afsenovilla/MMM-EMTAlcobendas]
+git clone https://github.com/afsenovilla/MMM-EMTAlcobendas
 ```
 
 Navigate to the new `MMM-EMTAlcobendas` folder and install the node dependencies.
