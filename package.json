@@ -1,24 +1,24 @@
 {
-    "name": "MMM-EMTValencia",
+    "name": "MMM-EMTAlcobendas",
     "version": "1.0.0",
-    "description": "Get estimations for bus stops in Valencia, Spain.",
+    "description": "Get estimations for bus stops in Alcobendas, Madrid (Spain).",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/TheRaulXP/MMM-EMTValencia.git"
+      "url": "git+https://github.com/afsenovilla/MMM-EMTAlcobendas.git"
     },
     "keywords": [
       "MagicMirror",
       "bus stop",
-      "emt valencia",
+      "emt alcobendas",
       "public transport"
     ],
-    "author": "TheRaulXP",
+    "author": "afsenovilla",
     "contributors": [],
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/TheRaulXP/MMM-EMTValencia/issues"
+      "url": "https://github.com/afsenovilla/MMM-EMTAlcobendas/issues"
     },
-    "homepage": "https://github.com/TheRaulXP/MMM-EMTValencia",
+    "homepage": "https://github.com/afsenovilla/MMM-EMTAlcobendas",
     "dependencies": {
       "xml2js": "latest"
     }

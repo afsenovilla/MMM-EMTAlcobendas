@@ -19,13 +19,13 @@ module.exports = NodeHelper.create({
         switch (notification){
 
             case "EMT_LANGUAGE":
-                var lFile = "./modules/MMM-EMTValencia/translations/" + payload + ".json";
+                var lFile = "./modules/MMM-EMTAlcobendas/translations/" + payload + ".json";
                 var lCont;
 
                 if (fs.existsSync(lFile)){
-                    lCont = fs.readFileSync("./modules/MMM-EMTValencia/translations/" + payload + ".json");
+                    lCont = fs.readFileSync("./modules/MMM-EMTAlcobendas/translations/" + payload + ".json");
                 } else {
-                    lCont = fs.readFileSync("./modules/MMM-EMTValencia/translations/en.json");
+                    lCont = fs.readFileSync("./modules/MMM-EMTAlcobendas/translations/en.json");
                 }
 
                 this.langFile = JSON.parse(lCont);
@@ -51,9 +51,15 @@ module.exports = NodeHelper.create({
         var url = "";
 
         if (this.config.stopLine == null){
-            url = "http://servicios.emtvalencia.es/pre/estimaciones/estimacion.php?parada=" + this.config.stopNumber;
+            url =
+              "https://busmadrid.welbits.com/stop/" +
+              this.config.stopNumber;
         } else {
-            url = "http://servicios.emtvalencia.es/pre/estimaciones/estimacion.php?parada=" + this.config.stopNumber + "&linea=" + this.config.stopLine;
+            url =
+              "https://busmadrid.welbits.com/stop/" +
+              this.config.stopNumber +
+              "&linea=" +
+              this.config.stopLine;
         }
 
         let req = http.get(url, function(res) {
